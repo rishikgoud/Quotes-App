@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% );
+    width: 100%;
+    max-width: 50vw;
+    min-height: 20vw;
+    margin: 10% auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+.container h2{
+    margin: 5px 0px;
+    position: relative;
+    font-size: 3rem;
+}
+.container h2::after{
+    content: " ";
+    width: 8vw;
+    height: 4px;
+    background: #2570D6;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 1px;
+    left: 43%;
+
+}
+#quote{
+    margin:35px 0px 10px 0px;
+    font-size: 2rem;
+    min-height: 100px;
+    font-weight: 600;
+}
+#quote::after , #quote::before{
+    content: '"';
+
+}
+#author{
+    font-weight: 600;
+    display: block;
+    position:relative;
+    float:right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#author::after{
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background: #2570D6;
+    top: 50%;
+    left: -30px;
+}
+.container div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    /* width: 100%; */
+    /* gap: 1rem;    */
+}
+.generate{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 1rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #2570D6;
+}
+.twitter {
+    display:flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 10px 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: 600;
+}
+.twitter img{
+    width: 2rem;
+    margin-right: 10px;
+}
+.name{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
