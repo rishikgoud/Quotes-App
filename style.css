@@ -115,43 +115,21 @@ body{
 
 @media screen and (max-width: 600px){
     .container{
-        background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% );
-        width: 100%;
         max-width: 70vw;
-        min-height: 20vw;
-        margin: 10% auto;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
-        padding: 30px;
-        text-align: center;
-        position: relative;
     }
     .container h2{
         margin: 5px 0px;
         position: relative;
         font-size: 2rem;
-    }
-    .container h2::after{
-        content: " ";
-        width: 8vw;
-        height: 4px;
-        background: #2570D6;
-        position: absolute;
-        bottom: -10px;
-        border-radius: 1px;
-        left: 40%;
-    
+        font-weight: 800;
     }
     #quote{
         margin:35px 0px 10px 0px;
         font-size: 1.5rem;
         min-height: 100px;
-        font-weight: 600;
+        font-weight: 500;
     }
-    #quote::after , #quote::before{
-        content: '"';
-    }
+    
     #author{
         font-weight: 600;
         display: block;
@@ -160,13 +138,22 @@ body{
         margin-right: 6px;
         margin-bottom: 10px;
     }
-    #author::after{
-        content: '';
-        width: 20px;
-        height: 2px;
-        position: absolute;
-        background: #2570D6;
-        top: 50%;
-        left: -30px;
+    .generate{
+        border-radius: 20px;
+        padding: 10px 1rem;
+        font-size: 0.75rem;
+        margin-right: 0.5rem;
+        color: white;
+        font-weight: 600;
+    }
+    .twitter {
+        padding: 10px 0.75rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    .twitter img{
+        width: 1.5rem;
+        margin-right: 5px;
     }
 } 
